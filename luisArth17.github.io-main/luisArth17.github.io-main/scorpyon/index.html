@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scorpyon Jiu Jitsu • CSSGAPA</title>
+  <meta name="description" content="Scorpyon Jiu Jitsu no CSSGAPA • Aulas às segundas, quartas e sextas das 18h às 19h30. Matrículas abertas!" />
+  <link rel="icon" href="logo.png" />
+  <style>
+    :root {
+      --bg:#0f0f10;
+      --brand:#ffd166;
+      --brand-dark:#f9c74f;
+      --txt:#f7f7f7;
+      --muted:#bbb;
+      --card:#1a1a1d;
+      --radius:14px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial, sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+    a{text-decoration:none;color:var(--brand)}
+    img{max-width:100%}
+
+    /* Header */
+    header{background:#111;position:sticky;top:0;z-index:1000}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+    .nav img{height:60px}
+    .menu{display:flex;gap:20px}
+    .menu a{font-weight:bold;color:var(--txt)}
+    .menu a:hover{color:var(--brand)}
+
+    /* Hero */
+    .hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px;background:radial-gradient(circle at center,#222 0%,#0f0f10 100%)}
+    .hero h1{font-size:2.5rem;color:var(--brand);margin-bottom:20px}
+    .hero p{max-width:600px;margin:auto;color:var(--muted);margin-bottom:30px}
+    .btn{background:var(--brand);color:#111;padding:12px 20px;border-radius:10px;font-weight:bold;display:inline-block}
+    .btn:hover{background:var(--brand-dark)}
+
+    /* Sections */
+    section{padding:60px 20px;max-width:1000px;margin:auto}
+    h2{color:var(--brand);margin-bottom:20px;font-size:2rem}
+    .card{background:var(--card);padding:20px;border-radius:var(--radius);margin-bottom:20px}
+
+    /* Grid */
+    .grid{display:grid;gap:20px}
+    .cols-2{grid-template-columns:1fr 1fr}
+    @media(max-width:800px){.cols-2{grid-template-columns:1fr}}
+
+    /* Contato */
+    .contact iframe{width:100%;height:250px;border:0;border-radius:12px}
+    .whatsapp{position:fixed;right:15px;bottom:15px;background:#25D366;color:#111;padding:12px 18px;border-radius:9999px;font-weight:bold;box-shadow:0 5px 15px rgba(0,0,0,.4)}
+
+    footer{background:#111;text-align:center;padding:20px;color:#999}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <img src="logo.png" alt="Scorpyon Jiu Jitsu Logo">
+      <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#horarios">Horários</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Scorpyon Jiu Jitsu - CSSGAPA</h1>
+    <p>Disciplina, técnica e evolução. Treinos às <b>segundas, quartas e sextas das 18h às 19h30</b>.  
+    Venha fazer parte da nossa família Scorpyon!</p>
+    <a class="btn" href="https://wa.me/5551991087915?text=Olá! Quero conhecer a Scorpyon Jiu Jitsu">Quero treinar 🥋</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <div class="card">
+      <p>A <b>Scorpyon Jiu Jitsu</b> é uma academia no CSSGAPA dedicada ao ensino do Jiu Jitsu para todas as idades.  
+      Nosso objetivo é desenvolver não só o atleta, mas também a disciplina, respeito e superação pessoal.</p>
+    </div>
+  </section>
+
+  <!-- Horários -->
+  <section id="horarios">
+    <h2>Horários</h2>
+    <div class="card">
+      <p><b>Segunda, Quarta e Sexta</b></p>
+      <p>⏰ 18h00 às 19h30</p>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos">
+    <h2>Planos</h2>
+    <div class="card">
+      <p>💰 Mensalidade: <b>R$ 150,00</b></p>
+      <p>➡️ Inclui acesso a todos os treinos da semana.</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="grid cols-2">
+    <div class="card">
+      <h2>Contato</h2>
+      <p>📍 <b>Endereço:</b> CSSGAPA - Rua Tobias Barreto, 990</p>
+      <p>📞 <b>WhatsApp:</b> <a href="https://wa.me/5551991087915" target="_blank">(51) 99108-7915</a></p>
+      <p>📷 <b>Instagram:</b> <a href="https://instagram.com/jiu_jitsu_no_cssgapa" target="_blank">@jiu_jitsu_no_cssgapa</a></p>
+      <a class="btn" href="https://wa.me/5551991087915?text=Quero%20uma%20aula%20experimental">Agendar Aula Experimental</a>
+    </div>
+    <div class="card contact">
+      <h2>Localização</h2>
+      <iframe src="https://maps.google.com/maps?q=Rua%20Tobias%20Barreto%20990&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/5551991087915?text=Olá! Quero treinar Jiu Jitsu na Scorpyon">💬 WhatsApp</a>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> Scorpyon Jiu Jitsu • CSSGAPA</p>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
