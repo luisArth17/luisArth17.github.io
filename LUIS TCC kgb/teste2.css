@@ -224,7 +224,22 @@ width: 200px;
 
 }
 
+.patrocinios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+}
 
+.patrocinios img{
+  max-height: 50px;
+  width: auto;
+}
+
+.linha2{
+  border: 3px solid orange;
+}
 
 @media (max-width: 768px) {
   .galeria {
